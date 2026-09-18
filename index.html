@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pyai Phyo Pie (Jake) — Systems Builder</title>
+  <meta name="description" content="Pyai Phyo Pie (Jake). Operational systems and AI-in-the-workflow. NOX — Own the Night. Yangon." />
+  <meta name="author" content="Pyai Phyo Pie" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#070707",
+            graphite: "#141414",
+            panel: "#0E0E0E",
+            line: "#222226",
+            cyan: "#00AEEF",
+            violet: "#8B5CF6",
+            mint: "#00D68F",
+            ice: "#F5F7FA",
+            mute: "#8B929C",
+          },
+          fontFamily: {
+            serif: ["Instrument Serif", "Georgia", "serif"],
+            sans: ["IBM Plex Sans", "system-ui", "sans-serif"],
+            mono: ["IBM Plex Mono", "ui-monospace", "monospace"],
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    html { scroll-behavior: smooth; }
+    body { background: #070707; color: #F5F7FA; }
+    .grid-bg {
+      background-image:
+        linear-gradient(to right, rgba(255,255,255,0.035) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255,255,255,0.035) 1px, transparent 1px);
+      background-size: 48px 48px;
+    }
+    .hairline { box-shadow: inset 0 0 0 1px rgba(255,255,255,0.06); }
+    .card:hover { border-color: rgba(0,174,239,0.55); }
+  </style>
+</head>
+<body class="font-sans antialiased">
+  <div class="fixed inset-0 grid-bg pointer-events-none opacity-60"></div>
+  <div class="fixed top-0 left-1/2 -translate-x-1/2 w-[70vw] h-[40vh] bg-cyan/10 blur-[120px] pointer-events-none"></div>
+  <header class="sticky top-0 z-30 border-b border-line/80 bg-ink/80 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-5 h-14 flex items-center justify-between">
+      <a href="#top" class="font-mono text-[11px] tracking-[0.22em] uppercase text-ice">PPP / JAKE</a>
+      <nav class="hidden md:flex items-center gap-6 font-mono text-[11px] tracking-widest uppercase text-mute">
+        <a class="hover:text-cyan" href="#systems">Systems</a>
+        <a class="hover:text-cyan" href="#experiments">Experiments</a>
+        <a class="hover:text-cyan" href="#practice">Practice</a>
+        <a class="hover:text-cyan" href="#connect">Connect</a>
+      </nav>
+      <span class="font-mono text-[11px] text-mute">AEC03574</span>
+    </div>
+  </header>
+  <main id="top" class="relative max-w-6xl mx-auto px-5">
+    <section class="pt-16 md:pt-24 pb-16 md:pb-20">
+      <div class="grid lg:grid-cols-12 gap-10 items-end">
+        <div class="lg:col-span-8">
+          <p class="font-mono text-[11px] tracking-[0.28em] uppercase text-cyan">Urban entertainment infrastructure · AI in the workflow</p>
+          <h1 class="mt-4 font-serif text-[52px] md:text-[88px] leading-[0.88] tracking-tight">Own the<br />decision path.</h1>
+          <p class="mt-7 max-w-xl text-[17px] leading-relaxed text-mute">Pyai Phyo Pie — Jake. I build software where messy human intent becomes a state change: book, admit, reject, pay, review. The model may judge. The ledger does not move without code.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="https://nox-staff.grok.me" class="px-5 py-2.5 bg-cyan text-ink text-sm font-medium hover:bg-ice">Staff — live</a>
+            <a href="https://nox-org.grok.me" class="px-5 py-2.5 border border-line text-sm hover:border-cyan">Org</a>
+            <a href="https://nox-reserve.grok.me" class="px-5 py-2.5 border border-line text-sm hover:border-cyan">Reserve</a>
+          </div>
+        </div>
+        <pre class="lg:col-span-4 hairline bg-panel/80 p-5 font-mono text-[11px] leading-6 text-mute overflow-x-auto">{{
+  name: "Pyai Phyo Pie",
+  alias: "Jake",
+  role: "Systems builder",
+  location: "Yangon",
+  building: "NOX",
+  contract: [
+    "typed questions",
+    "code owns side effects",
+    "act / review / stop"
+  ]
+}}</pre>
+      </div>
+    </section>
+    <section id="systems" class="py-16 border-t border-line">
+      <div class="grid md:grid-cols-12 gap-8">
+        <div class="md:col-span-4">
+          <p class="font-mono text-[11px] tracking-[0.24em] uppercase text-cyan">01 — AI Systems</p>
+          <h2 class="font-serif text-4xl md:text-5xl mt-3 leading-none">Intelligence to action</h2>
+        </div>
+        <div class="md:col-span-8 text-[15px] leading-relaxed text-mute">
+          <p>Keep state, permissions, side effects, and audit in code. Break a broad judgment into narrow questions with explicit criteria. Ask them against one state object. Combine answers in application logic. Act automatically only above a risk-adjusted threshold.</p>
+        </div>
+      </div>
+      <div class="mt-10 grid grid-cols-2 md:grid-cols-5 gap-px bg-line border border-line">
+        <div class="bg-ink p-4"><p class="font-mono text-cyan text-xs">01</p><p class="mt-2 text-sm">State stays in code</p></div>
+        <div class="bg-ink p-4"><p class="font-mono text-cyan text-xs">02</p><p class="mt-2 text-sm">Narrow questions</p></div>
+        <div class="bg-ink p-4"><p class="font-mono text-cyan text-xs">03</p><p class="mt-2 text-sm">One state object</p></div>
+        <div class="bg-ink p-4"><p class="font-mono text-cyan text-xs">04</p><p class="mt-2 text-sm">Compose in code</p></div>
+        <div class="bg-ink p-4 col-span-2 md:col-span-1"><p class="font-mono text-cyan text-xs">05</p><p class="mt-2 text-sm">Act / review / stop</p></div>
+      </div>
+      <div class="mt-8 overflow-x-auto border border-line">
+        <table class="w-full text-sm">
+          <thead class="bg-graphite text-mute font-mono text-[11px] uppercase tracking-wider">
+            <tr><th class="text-left px-4 py-3 font-medium">Door scan</th><th class="text-left px-4 py-3 font-medium">Primitive</th><th class="text-left px-4 py-3 font-medium">Code</th></tr>
+          </thead>
+          <tbody class="bg-panel/40">
+            <tr class="border-t border-line"><td class="px-4 py-3">What should happen?</td><td class="px-4 py-3 text-cyan font-mono text-xs">Choice</td><td class="px-4 py-3 text-mute">admit / reject / review</td></tr>
+            <tr class="border-t border-line"><td class="px-4 py-3">Why reject?</td><td class="px-4 py-3 text-cyan font-mono text-xs">Choice</td><td class="px-4 py-3 text-mute">expired · duplicate · wrong event</td></tr>
+            <tr class="border-t border-line"><td class="px-4 py-3">Already redeemed?</td><td class="px-4 py-3 text-cyan font-mono text-xs">Noul</td><td class="px-4 py-3 text-mute">hard stop if high</td></tr>
+            <tr class="border-t border-line"><td class="px-4 py-3">Venue authorized?</td><td class="px-4 py-3 text-cyan font-mono text-xs">Noul</td><td class="px-4 py-3 text-mute">hard stop if high</td></tr>
+            <tr class="border-t border-line"><td class="px-4 py-3">Anomaly pressure</td><td class="px-4 py-3 text-cyan font-mono text-xs">Score</td><td class="px-4 py-3 text-mute">raise the admit threshold</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="mt-4 font-mono text-[11px] text-mute">High + checks pass → admit · medium → staff · low or conflict → do not act</p>
+    </section>
+    <section id="experiments" class="py-16 border-t border-line">
+      <div class="flex items-end justify-between gap-6 flex-wrap">
+        <div>
+          <p class="font-mono text-[11px] tracking-[0.24em] uppercase text-cyan">02 — Experiments</p>
+          <h2 class="font-serif text-4xl md:text-5xl mt-3 leading-none">Live surfaces</h2>
+        </div>
+        <p class="max-w-md text-sm text-mute">Staff first. The rest are door, till, tenant, catalog, rails, memory, routing.</p>
+      </div>
+      <a href="https://nox-staff.grok.me" class="card mt-10 block border border-cyan/40 bg-gradient-to-br from-cyan/10 to-transparent p-6 md:p-8">
+        <div class="flex items-center justify-between gap-4">
+          <p class="font-mono text-[11px] tracking-widest uppercase text-cyan">Lead experiment</p>
+          <span class="font-mono text-[11px] text-mint">LIVE</span>
+        </div>
+        <h3 class="font-serif text-4xl mt-3">Staff</h3>
+        <p class="mt-3 max-w-2xl text-mute">Voice floor. ASR → normalize → intent. Inbox of clarify and handoff. Owner approves, sends clarify, or takes over. AUTO locked until a gold-set precision bar. Transcript is evidence. Ledger stays source of truth.</p>
+      </a>
+      <div class="mt-4 grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        <a class="card border border-line bg-panel p-5" href="https://nox-reserve.grok.me"><p class="font-mono text-[11px] text-cyan">RESERVE</p><h3 class="font-serif text-2xl mt-1">Door + till</h3><p class="mt-2 text-sm text-mute">Prepaid tables and tickets. QR at the door. Wallet now. Split payout at close.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://nox-org.grok.me"><p class="font-mono text-[11px] text-cyan">ORG</p><h3 class="font-serif text-2xl mt-1">Control plane</h3><p class="mt-2 text-sm text-mute">Multi-tenant promoters and venues. Events, tickets, occupancy, isolation.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://nox-register.grok.me"><p class="font-mono text-[11px] text-cyan">REGISTER</p><h3 class="font-serif text-2xl mt-1">POS / catalog</h3><p class="mt-2 text-sm text-mute">Jewelry inventory, customers, cash / card / QR. Not a namespace registry.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://nox-flow.grok.me"><p class="font-mono text-[11px] text-cyan">FLOW</p><h3 class="font-serif text-2xl mt-1">MMK rails</h3><p class="mt-2 text-sm text-mute">Invoices. KBZPay, WavePay, MMQR. Deterministic collection.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://nox-vault.grok.me"><p class="font-mono text-[11px] text-cyan">VAULT</p><h3 class="font-serif text-2xl mt-1">Local workspace</h3><p class="mt-2 text-sm text-mute">Isolated repos, commits, MEMORY.md, inbox. Network optional.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://nox-forge.grok.me"><p class="font-mono text-[11px] text-cyan">FORGE</p><h3 class="font-serif text-2xl mt-1">Which model</h3><p class="mt-2 text-sm text-mute">Catalog of tools and agents with limits. Routing is a Choice problem.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://toolhub.grok.me"><p class="font-mono text-[11px] text-cyan">TOOLHUB</p><h3 class="font-serif text-2xl mt-1">The bench</h3><p class="mt-2 text-sm text-mute">Format, hash, decode, draft. Only three tools send text to a model.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://nox-platform.base44.app"><p class="font-mono text-[11px] text-cyan">PLATFORM</p><h3 class="font-serif text-2xl mt-1">NOX</h3><p class="mt-2 text-sm text-mute">Discover → decide → book → enter → experience.</p></a>
+        <a class="card border border-line bg-panel p-5" href="https://nox-musicforprogramming.grok.me"><p class="font-mono text-[11px] text-violet">CRAFT</p><h3 class="font-serif text-2xl mt-1">musicForProgramming</h3><p class="mt-2 text-sm text-mute">Long mixes as programmable objects. Own The Night.</p></a>
+      </div>
+    </section>
+    <section id="practice" class="py-16 border-t border-line">
+      <p class="font-mono text-[11px] tracking-[0.24em] uppercase text-cyan">03 — Practice</p>
+      <h2 class="font-serif text-4xl md:text-5xl mt-3 leading-none">Also true</h2>
+      <div class="mt-10 grid md:grid-cols-3 gap-4">
+        <div class="border border-line bg-panel p-5"><h3 class="font-medium">4 MW solar–BESS</h3><p class="mt-2 text-sm text-mute">Industrial renewable integration in Myanmar. Grid-facing, not a slide.</p></div>
+        <div class="border border-line bg-panel p-5"><h3 class="font-medium">Electrical &amp; marine</h3><p class="mt-2 text-sm text-mute">Power systems, telecom infrastructure, solar installation.</p></div>
+        <div class="border border-line bg-panel p-5"><h3 class="font-medium">Quantum control plane</h3><p class="mt-2 text-sm text-mute">Decentralized sync for multi-peer link-layer entanglement requests.</p><a class="mt-3 inline-block font-mono text-[11px] text-cyan" href="https://www.academia.edu/165504802/From_Routing_Protocols_to_Autonomous_Agents_A_New_Control_Plane_for_the_Quantum_Internet">Read paper →</a></div>
+      </div>
+      <p class="mt-6 font-mono text-[11px] text-mute">Myanmar Engineering Council AEC03574 · <a class="text-cyan" href="https://myanmarengc.org/list-of-rtc/page/57">verify registration</a> · Academia <a class="text-cyan" href="https://ytumyanmar.academia.edu/PPie">ytumyanmar.academia.edu/PPie</a></p>
+    </section>
+    <section id="connect" class="py-16 border-t border-line pb-24">
+      <p class="font-mono text-[11px] tracking-[0.24em] uppercase text-cyan">04 — Connect</p>
+      <h2 class="font-serif text-4xl md:text-6xl mt-3 leading-none">Build with the<br />decision in code.</h2>
+      <p class="mt-6 max-w-lg text-mute">Open to systems work where intelligence has to live inside software — routing, review gates, calibrated decisions, operational products.</p>
+      <div class="mt-8 flex flex-wrap gap-x-6 gap-y-2 font-mono text-sm">
+        <a class="text-cyan hover:text-ice" href="https://github.com/pyaiphyopie">github.com/pyaiphyopie</a>
+        <a class="text-cyan hover:text-ice" href="https://happenstance.ai/u/pyai-pie">happenstance</a>
+      </div>
+      <p class="mt-10 font-mono text-[11px] text-mute">Yangon · NOX Technologies · Own the Night</p>
+    </section>
+  </main>
+</body>
+</html>
